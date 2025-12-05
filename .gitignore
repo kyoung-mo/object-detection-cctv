@@ -1,31 +1,29 @@
-# Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# 가상환경
+# virtual env
 venv/
 .venv/
-env/
-.env/
 
-# VSCode / IDE
+# VSCode / PyCharm
 .vscode/
 .idea/
 
-# 로그 / 결과물
-logs/*
-!logs/.gitkeep
-
-data/results/*
-data/sample_videos/*
-data/calib_images/*
-
-# Hailo / 모델 아웃풋 (원하면 추후 제거 가능)
+# Model Artifacts
 models/*.onnx
 models/*.har
 models/*.hef
 
-# 기타
+# Logs
+logs/*
+!logs/.gitkeep
+
+# Data artifacts
+data/calib_images/*
+data/sample_videos/*
+data/results/*
+
+# OS files
 .DS_Store
