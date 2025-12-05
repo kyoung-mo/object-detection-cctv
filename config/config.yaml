@@ -1,0 +1,14 @@
+paths:
+  models_dir: "./models"
+  best_pt: "models/best.pt"
+  onnx_model: "models/yolov8_person.onnx"
+  har_model: "models/yolov8_person.har"
+  hef_model: "models/yolov8_person.hef"
+
+  calib_images_dir: "data/calib_images"
+  sample_videos_dir: "data/sample_videos"
+  results_dir: "data/results"
+
+  logs_dir: "logs"
+  app_log: "logs/app.log"
+  benchmark_csv: "logs/benchmark.csv"

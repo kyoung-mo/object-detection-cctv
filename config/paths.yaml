@@ -1,0 +1,21 @@
+app:
+  mode: "live_cctv"      # live_cctv / record
+  use_hailo: true        # true: Hailo-8, false: CPU(ONNX)
+
+camera:
+  source: "picamera2"    # picamera2 / usb
+  width: 640
+  height: 480
+  fps: 30
+
+detection:
+  img_size: 640
+  conf_thresh: 0.4
+  iou_thresh: 0.45
+  max_detections: 100
+
+gpio:
+  enabled: true
+  buzzer_pin: 18
+  led_pin: 23
+  vibration_pin: 24
