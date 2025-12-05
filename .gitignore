@@ -27,3 +27,5 @@ data/results/*
 
 # OS files
 .DS_Store
+venv/
+venv/
