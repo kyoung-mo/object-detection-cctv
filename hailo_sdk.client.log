@@ -1,0 +1,21 @@
+2025-12-06 12:51:27,692 - INFO - parser.py:162 - Translation started on ONNX model yolov8_person
+2025-12-06 12:51:27,712 - INFO - parser.py:197 - Restored ONNX model yolov8_person (completion time: 00:00:00.02)
+2025-12-06 12:51:27,785 - INFO - parser.py:220 - Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.09)
+2025-12-06 12:51:28,094 - INFO - parser.py:278 - Simplified ONNX model for a parsing retry attempt (completion time: 00:00:00.40)
+2025-12-06 13:11:38,155 - INFO - parser.py:162 - Translation started on ONNX model yolov8_person
+2025-12-06 13:11:38,210 - INFO - parser.py:197 - Restored ONNX model yolov8_person (completion time: 00:00:00.05)
+2025-12-06 13:11:38,343 - INFO - parser.py:220 - Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.19)
+2025-12-06 13:11:38,560 - INFO - onnx_translator.py:2569 - NMS structure of yolov8 (or equivalent architecture) was detected.
+2025-12-06 13:11:38,560 - INFO - onnx_translator.py:2571 - In order to use HailoRT post-processing capabilities, these end node names should be used: /model.22/cv2.0/cv2.0.2/Conv /model.22/cv3.0/cv3.0.2/Conv /model.22/cv2.1/cv2.1.2/Conv /model.22/cv3.1/cv3.1.2/Conv /model.22/cv2.2/cv2.2.2/Conv /model.22/cv3.2/cv3.2.2/Conv.
+2025-12-06 13:11:38,622 - INFO - parser.py:377 - Start nodes mapped from original model: 'images': 'yolov8_person/input_layer1'.
+2025-12-06 13:11:38,622 - INFO - parser.py:378 - End nodes mapped from original model: '/model.22/Concat_3'.
+2025-12-06 13:11:38,662 - INFO - parser.py:292 - Translation completed on ONNX model yolov8_person (completion time: 00:00:00.51)
+2025-12-06 13:11:39,549 - INFO - client_runner.py:1864 - Saved HAR to: /home/kym/object-detection-cctv/hailo/quantized/yolov8_person_quantized.parsed.har
+2025-12-06 13:11:39,554 - INFO - commands.py:4111 - ParsedPerformanceParam command, setting optimization_level(max=2)
+2025-12-06 13:11:39,555 - INFO - client_runner.py:489 - Loading model script commands to yolov8_person from string
+2025-12-06 13:11:39,560 - INFO - commands.py:4111 - ParsedPerformanceParam command, setting optimization_level(max=2)
+2025-12-06 13:11:40,046 - IMPORTANT - sdk_backend.py:1089 - Starting Model Optimization
+2025-12-06 13:19:12,871 - IMPORTANT - sdk_backend.py:1130 - Model Optimization is done
+2025-12-06 13:19:13,365 - INFO - client_runner.py:1864 - Saved HAR to: /home/kym/object-detection-cctv/hailo/quantized/yolov8_person_quantized.har
+2025-12-06 13:19:34,704 - ERROR - hailo_tools_runner.py:582 - Failed to produce compiled graph
+2025-12-06 13:19:34,707 - ERROR - hailo_tools_runner.py:231 - BackendAllocatorException: Compilation failed: No valid partition found

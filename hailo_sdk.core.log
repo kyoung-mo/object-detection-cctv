@@ -1,0 +1,219 @@
+[2025-12-06 13:19:13.598] [default] [info] Ran from command: "scripts/convert_yolo_to_hailo.py --skip-onnx --onnx-path onnx/best.onnx --net-name yolov8_person --imgsz 640 --end-node /model.22/Concat_3"
+[2025-12-06 13:19:13.599] [default] [info] Loading network parameters
+[2025-12-06 13:19:13.717] [default] [info] Starting Hailo allocation and compilation flow
+[2025-12-06 13:19:13.747] [default] [info] Model name: yolov8_person
+[2025-12-06 13:19:16.985] [default] [info] No successful assignment for format_conversion1, most common errors: Agent infeasible
+
+[2025-12-06 13:19:16.985] [default] [info] No successful assignment for concat17_dummy_13038, most common errors: 
+[2025-12-06 13:19:16.985] [default] [info] No successful assignment for format_conversion1, most common errors: Agent infeasible
+
+[2025-12-06 13:19:16.985] [default] [info] No successful assignment for concat17_dummy_13038, most common errors: 
+[2025-12-06 13:19:16.997] [default] [info] No successful assignment for concat17_dummy_13165, most common errors: 
+[2025-12-06 13:19:16.997] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:16.997] [default] [info] No successful assignment for concat17_dummy_13165, most common errors: 
+[2025-12-06 13:19:16.997] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:17.073] [default] [info] No successful assignment for concat17_dummy_13165, most common errors: 
+[2025-12-06 13:19:17.073] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:17.081] [default] [info] No successful assignment for concat17_dummy_13165, most common errors: 
+[2025-12-06 13:19:17.081] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:17.102] [default] [info] No successful assignment for concat17_dummy_13293, most common errors: 
+[2025-12-06 13:19:17.102] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:17.186] [default] [info] No successful assignment for concat17_dummy_13293, most common errors: 
+[2025-12-06 13:19:17.186] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:17.186] [default] [info] No successful assignment for concat17_dummy_13293, most common errors: 
+[2025-12-06 13:19:17.186] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:17.205] [default] [info] No successful assignment for concat17_dummy_13293, most common errors: 
+[2025-12-06 13:19:17.205] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:17.235] [default] [info] No successful assignment for concat17_dummy_13421, most common errors: 
+[2025-12-06 13:19:17.235] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:17.235] [default] [info] No successful assignment for concat17_dummy_13421, most common errors: 
+[2025-12-06 13:19:17.235] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:17.301] [default] [info] No successful assignment for concat17_dummy_13421, most common errors: 
+[2025-12-06 13:19:17.302] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:17.329] [default] [info] No successful assignment for concat17_dummy_13421, most common errors: 
+[2025-12-06 13:19:17.329] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:17.411] [default] [info] No successful assignment for concat17_dummy_13549, most common errors: 
+[2025-12-06 13:19:17.411] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:17.424] [default] [info] No successful assignment for concat17_dummy_13549, most common errors: 
+[2025-12-06 13:19:17.424] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:17.436] [default] [info] No successful assignment for concat17, most common errors: Agent infeasible
+
+[2025-12-06 13:19:17.436] [default] [info] No successful assignment for output_layer1_dummy_13680, most common errors: 
+[2025-12-06 13:19:17.438] [default] [info] Trying to solve in single context
+[2025-12-06 13:19:17.454] [default] [info] Single context flow failed: Recoverable single context error, continuing in multi context
+[2025-12-06 13:19:20.525] [default] [info] No successful assignment for format_conversion1, most common errors: Agent infeasible
+
+[2025-12-06 13:19:20.525] [default] [info] No successful assignment for concat17_dummy_26734, most common errors: 
+[2025-12-06 13:19:20.525] [default] [info] No successful assignment for format_conversion1, most common errors: Agent infeasible
+
+[2025-12-06 13:19:20.525] [default] [info] No successful assignment for concat17_dummy_26734, most common errors: 
+[2025-12-06 13:19:20.536] [default] [info] No successful assignment for concat17_dummy_26861, most common errors: 
+[2025-12-06 13:19:20.536] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:20.600] [default] [info] No successful assignment for concat17_dummy_26861, most common errors: 
+[2025-12-06 13:19:20.600] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:20.620] [default] [info] No successful assignment for concat17_dummy_26989, most common errors: 
+[2025-12-06 13:19:20.620] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:20.698] [default] [info] No successful assignment for concat17_dummy_26989, most common errors: 
+[2025-12-06 13:19:20.698] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:20.726] [default] [info] No successful assignment for concat17_dummy_27117, most common errors: 
+[2025-12-06 13:19:20.726] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:20.793] [default] [info] No successful assignment for concat17_dummy_27117, most common errors: 
+[2025-12-06 13:19:20.793] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:20.871] [default] [info] No successful assignment for concat17_dummy_27245, most common errors: 
+[2025-12-06 13:19:20.871] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:20.883] [default] [info] No successful assignment for concat17, most common errors: Agent infeasible
+
+[2025-12-06 13:19:20.883] [default] [info] No successful assignment for output_layer1_dummy_27376, most common errors: 
+[2025-12-06 13:19:20.894] [default] [info] Post update resources utilization[Step - 1]: control=0.9, compute=0.9, compute_16bit=0.9, memory=0.85
+[2025-12-06 13:19:24.009] [default] [info] No successful assignment for format_conversion1, most common errors: Agent infeasible
+
+[2025-12-06 13:19:24.009] [default] [info] No successful assignment for concat17_dummy_40430, most common errors: 
+[2025-12-06 13:19:24.009] [default] [info] No successful assignment for format_conversion1, most common errors: Agent infeasible
+
+[2025-12-06 13:19:24.009] [default] [info] No successful assignment for concat17_dummy_40430, most common errors: 
+[2025-12-06 13:19:24.020] [default] [info] No successful assignment for concat17_dummy_40557, most common errors: 
+[2025-12-06 13:19:24.020] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:24.085] [default] [info] No successful assignment for concat17_dummy_40557, most common errors: 
+[2025-12-06 13:19:24.085] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:24.104] [default] [info] No successful assignment for concat17_dummy_40685, most common errors: 
+[2025-12-06 13:19:24.104] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:24.182] [default] [info] No successful assignment for concat17_dummy_40685, most common errors: 
+[2025-12-06 13:19:24.182] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:24.210] [default] [info] No successful assignment for concat17_dummy_40813, most common errors: 
+[2025-12-06 13:19:24.210] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:24.275] [default] [info] No successful assignment for concat17_dummy_40813, most common errors: 
+[2025-12-06 13:19:24.275] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:24.355] [default] [info] No successful assignment for concat17_dummy_40941, most common errors: 
+[2025-12-06 13:19:24.355] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:24.366] [default] [info] No successful assignment for concat17, most common errors: Agent infeasible
+
+[2025-12-06 13:19:24.366] [default] [info] No successful assignment for output_layer1_dummy_41072, most common errors: 
+[2025-12-06 13:19:24.379] [default] [info] Post update resources utilization[Step - 2]: control=0.8, compute=0.8, compute_16bit=0.8, memory=0.8
+[2025-12-06 13:19:27.398] [default] [info] No successful assignment for format_conversion1, most common errors: Agent infeasible
+
+[2025-12-06 13:19:27.398] [default] [info] No successful assignment for concat17_dummy_54126, most common errors: 
+[2025-12-06 13:19:27.399] [default] [info] No successful assignment for format_conversion1, most common errors: Agent infeasible
+
+[2025-12-06 13:19:27.399] [default] [info] No successful assignment for concat17_dummy_54126, most common errors: 
+[2025-12-06 13:19:27.410] [default] [info] No successful assignment for concat17_dummy_54253, most common errors: 
+[2025-12-06 13:19:27.410] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:27.473] [default] [info] No successful assignment for concat17_dummy_54253, most common errors: 
+[2025-12-06 13:19:27.474] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:27.494] [default] [info] No successful assignment for concat17_dummy_54381, most common errors: 
+[2025-12-06 13:19:27.494] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:27.572] [default] [info] No successful assignment for concat17_dummy_54381, most common errors: 
+[2025-12-06 13:19:27.572] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:27.599] [default] [info] No successful assignment for concat17_dummy_54509, most common errors: 
+[2025-12-06 13:19:27.599] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:27.663] [default] [info] No successful assignment for concat17_dummy_54509, most common errors: 
+[2025-12-06 13:19:27.663] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:27.741] [default] [info] No successful assignment for concat17_dummy_54637, most common errors: 
+[2025-12-06 13:19:27.741] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:27.752] [default] [info] No successful assignment for concat17, most common errors: Agent infeasible
+
+[2025-12-06 13:19:27.752] [default] [info] No successful assignment for output_layer1_dummy_54768, most common errors: 
+[2025-12-06 13:19:27.765] [default] [info] Post update resources utilization[Step - 3]: control=0.7, compute=0.7, compute_16bit=0.7, memory=0.7
+[2025-12-06 13:19:30.805] [default] [info] No successful assignment for format_conversion1, most common errors: Agent infeasible
+
+[2025-12-06 13:19:30.805] [default] [info] No successful assignment for concat17_dummy_67822, most common errors: 
+[2025-12-06 13:19:30.805] [default] [info] No successful assignment for format_conversion1, most common errors: Agent infeasible
+
+[2025-12-06 13:19:30.805] [default] [info] No successful assignment for concat17_dummy_67822, most common errors: 
+[2025-12-06 13:19:30.816] [default] [info] No successful assignment for concat17_dummy_67949, most common errors: 
+[2025-12-06 13:19:30.816] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:30.878] [default] [info] No successful assignment for concat17_dummy_67949, most common errors: 
+[2025-12-06 13:19:30.878] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:30.897] [default] [info] No successful assignment for concat17_dummy_68077, most common errors: 
+[2025-12-06 13:19:30.897] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:30.974] [default] [info] No successful assignment for concat17_dummy_68077, most common errors: 
+[2025-12-06 13:19:30.974] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:31.002] [default] [info] No successful assignment for concat17_dummy_68205, most common errors: 
+[2025-12-06 13:19:31.002] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:31.066] [default] [info] No successful assignment for concat17_dummy_68205, most common errors: 
+[2025-12-06 13:19:31.066] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:31.143] [default] [info] No successful assignment for concat17_dummy_68333, most common errors: 
+[2025-12-06 13:19:31.143] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:31.154] [default] [info] No successful assignment for concat17, most common errors: Agent infeasible
+
+[2025-12-06 13:19:31.154] [default] [info] No successful assignment for output_layer1_dummy_68464, most common errors: 
+[2025-12-06 13:19:31.167] [default] [info] Post update resources utilization[Step - 4]: control=0.6, compute=0.6, compute_16bit=0.6, memory=0.6
+[2025-12-06 13:19:34.239] [default] [info] No successful assignment for format_conversion1, most common errors: Agent infeasible
+
+[2025-12-06 13:19:34.239] [default] [info] No successful assignment for concat17_dummy_81518, most common errors: 
+[2025-12-06 13:19:34.242] [default] [info] No successful assignment for format_conversion1, most common errors: Agent infeasible
+
+[2025-12-06 13:19:34.242] [default] [info] No successful assignment for concat17_dummy_81518, most common errors: 
+[2025-12-06 13:19:34.253] [default] [info] No successful assignment for concat17_dummy_81645, most common errors: 
+[2025-12-06 13:19:34.253] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:34.319] [default] [info] No successful assignment for concat17_dummy_81645, most common errors: 
+[2025-12-06 13:19:34.319] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:34.338] [default] [info] No successful assignment for concat17_dummy_81773, most common errors: 
+[2025-12-06 13:19:34.338] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:34.419] [default] [info] No successful assignment for concat17_dummy_81773, most common errors: 
+[2025-12-06 13:19:34.419] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:34.448] [default] [info] No successful assignment for concat17_dummy_81901, most common errors: 
+[2025-12-06 13:19:34.448] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:34.515] [default] [info] No successful assignment for concat17_dummy_81901, most common errors: 
+[2025-12-06 13:19:34.515] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:34.594] [default] [info] No successful assignment for concat17_dummy_82029, most common errors: 
+[2025-12-06 13:19:34.594] [default] [info] No successful assignment for format_conversion1_dc, most common errors: Agent infeasible
+
+[2025-12-06 13:19:34.605] [default] [info] No successful assignment for concat17, most common errors: Agent infeasible
+
+[2025-12-06 13:19:34.605] [default] [info] No successful assignment for output_layer1_dummy_82160, most common errors: 
+[2025-12-06 13:19:34.621] [default] [info] Performance Flow Summary
++========+==============+=============+==========+=====+========+
+| Iter-# | Control Util | Memory Util | Contexts | FPS | Status |
++--------+--------------+-------------+----------+-----+--------+
+
+[2025-12-06 13:19:34.669] [default] [info] [1;41mMapping Failed (allocation time: 3s)[0m
+[2025-12-06 13:19:34.670] [default] [info] Builder fail with status 94: No valid partition found
+[2025-12-06 13:19:34.670] [default] [info] No valid partition found

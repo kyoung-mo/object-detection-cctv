@@ -1,0 +1,22 @@
+2025-12-06 13:11:40,990 - INFO - mo_script_parser.py:82 - Model received quantization params from the hn
+2025-12-06 13:11:44,585 - INFO - algorithm_base.py:140 - MatmulDecompose skipped
+2025-12-06 13:11:44,835 - INFO - algorithm_base.py:143 - Starting Mixed Precision
+2025-12-06 13:11:45,184 - INFO - algorithm_base.py:159 - Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.35)
+2025-12-06 13:11:45,476 - INFO - algorithm_base.py:140 - LayerNorm Decomposition skipped
+2025-12-06 13:11:46,158 - INFO - algorithm_base.py:143 - Starting Statistics Collector
+2025-12-06 13:11:46,162 - INFO - stats_collection.py:77 - Using dataset with 200 entries for calibration
+2025-12-06 13:12:11,572 - INFO - algorithm_base.py:159 - Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:25.41)
+2025-12-06 13:12:12,295 - INFO - algorithm_base.py:143 - Starting Fix zp_comp Encoding
+2025-12-06 13:12:12,295 - INFO - algorithm_base.py:159 - Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+2025-12-06 13:12:12,296 - INFO - algorithm_base.py:140 - Matmul Equalization skipped
+2025-12-06 13:12:34,663 - INFO - algorithm_base.py:140 - Finetune encoding skipped
+2025-12-06 13:12:34,673 - INFO - algorithm_base.py:143 - Starting Bias Correction
+2025-12-06 13:12:35,182 - INFO - block_by_block.py:325 - The algorithm Bias Correction will use up to 3.60 GB of storage space
+2025-12-06 13:12:35,182 - INFO - bias_correction_v2.py:66 - Using dataset with 200 entries for Bias Correction
+2025-12-06 13:16:49,403 - INFO - algorithm_base.py:159 - Model Optimization Algorithm Bias Correction is done (completion time is 00:04:14.22)
+2025-12-06 13:16:49,483 - INFO - algorithm_base.py:140 - Adaround skipped
+2025-12-06 13:16:49,486 - INFO - algorithm_base.py:140 - Quantization-Aware Fine-Tuning skipped
+2025-12-06 13:17:08,696 - INFO - algorithm_base.py:143 - Starting Layer Noise Analysis
+2025-12-06 13:19:04,280 - INFO - algorithm_base.py:159 - Model Optimization Algorithm Layer Noise Analysis is done (completion time is 00:01:55.58)
+2025-12-06 13:19:04,739 - INFO - quant_checker.py:122 - Output layers signal-to-noise ratio (SNR): measures the quantization noise (higher is better)
+2025-12-06 13:19:04,739 - INFO - quant_checker.py:127 - 	yolov8_person/output_layer1 SNR:	18.79 dB

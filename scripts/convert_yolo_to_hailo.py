@@ -18,13 +18,14 @@ YOLOv8 .pt  ->  .onnx  ->  Hailo .har / .hef 변환 스크립트
 """
 
 import argparse
+import glob
 import os
 from pathlib import Path
-import glob
 
 import numpy as np
 import torch
 from torch.nn.modules.container import Sequential
+from typing import Optional, List
 
 # --- Hailo SDK ---
 from hailo_sdk_client import ClientRunner
@@ -81,7 +82,6 @@ def export_to_onnx(weights_path: Path, onnx_path: Path, imgsz: int = 640) -> Pat
 
     # 사용자가 원하는 onnx_path와 다르면 복사/이동
     if exported_path.resolve() != onnx_path.resolve():
-        # 그냥 동일 경로로 복사
         import shutil
         shutil.copy2(exported_path, onnx_path)
         print(f"[ONNX] Copied exported ONNX: {exported_path} -> {onnx_path}")
@@ -91,7 +91,7 @@ def export_to_onnx(weights_path: Path, onnx_path: Path, imgsz: int = 640) -> Pat
     return exported_path
 
 
-def load_calib_from_dir(calib_dir: Path, imgsz: int, calib_size: int) -> np.ndarray:
+def load_calib_from_dir(calib_dir: Path, imgsz: int, calib_size: int) -> Optional[np.ndarray]:
     """
     calib_dir 안의 jpg/png 이미지를 읽어서 (N, H, W, 3) uint8 캘리브레이션 셋 생성.
     이미지 수가 calib_size 보다 적으면 있는 만큼만 사용.
@@ -127,7 +127,7 @@ def load_calib_from_dir(calib_dir: Path, imgsz: int, calib_size: int) -> np.ndar
     return arr
 
 
-def build_calib_data(imgsz: int, calib_size: int, calib_dir: Path | None) -> np.ndarray:
+def build_calib_data(imgsz: int, calib_size: int, calib_dir: Optional[Path]) -> np.ndarray:
     """
     캘리브레이션 데이터 생성:
       1) calib_dir이 있으면 실제 이미지를 사용
@@ -156,7 +156,7 @@ def onnx_to_hailo(
     calib_batch_size: int,
     har_path: Path,
     hef_path: Path,
-    end_nodes: list[str] | None = None,
+    end_nodes: Optional[List[str]] = None,
 ):
     """
     ONNX → Hailo HAR / HEF 변환
@@ -192,11 +192,17 @@ def onnx_to_hailo(
     print(f"[Hailo] Saved parsed HAR: {har_path.with_suffix('.parsed.har')}")
 
     # 모델 스크립트: 최적화 & 캘리브레이션 설정
-    model_script = f"""
+    model_script = """
 model_optimization_flavor(optimization_level={op_level}, compression_level={comp_level})
 performance_param(compiler_optimization_level=max)
-model_optimization_config(calibration, batch_size={calib_batch_size}, calibset_size={calib_data.shape[0]})
-"""
+model_optimization_config(calibration, batch_size={batch_size}, calibset_size={calib_size})
+""".format(
+        op_level=op_level,
+        comp_level=comp_level,
+        batch_size=calib_batch_size,
+        calib_size=calib_data.shape[0],
+    )
+
     runner.load_model_script(model_script)
 
     print("[Hailo] Running optimization (quantization)...")
